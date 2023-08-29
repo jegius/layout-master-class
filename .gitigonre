@@ -1,0 +1,27 @@
+# .gitignore
+# Ниже приведен пример стандартного файла .gitignore для веб-проекта на HTML, CSS и Javascript
+
+# Игнорировать настройки редактора и IDE
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# Игнорирование конфигураций, логов, системных файлов
+*.log
+*.bak
+*.backup
+.DS_Store
+
+# Игнорирование файлов сборки и вендоров
+dist/
+node_modules/
+
+# Игнорирование файлов Sass/SCSS (.map и .sass-cache тоже следует игнорировать)
+*.css.map
+*.sass-cache/
+*.scss-cache/
+/.idea/

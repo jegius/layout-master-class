@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --dark-blue: #22356F;
+    --blue: #62D0DF;
+    --white: #fff;
+    --cream: #F4F9E2;
+    --orange: #F9B640;
+
+    --base-badding: 10rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--dark-blue);
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none; /* убирает серую подсветку при активации в некоторых браузерах */
+    -webkit-appearance: none; /* убирает стили браузера в Chrome и Safari */
+    -moz-appearance: none; /* убирает стили браузера в Firefox */
+    appearance: none; /* убирает стили браузера для остальных */
+}
+
+a {
+    text-decoration: none; /* убирает подчеркивание */
+    color: var(--dark-blue);
+}
+
+._with-padding {
+    padding: 0 var(--base-badding);
+}
+
+.header {
+    position: fixed;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.logo {
+    color: var(--blue);
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.header__contact-button {
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 1.5rem 2.5rem;
+    border-radius: 10rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 0 0;
+    transform: scale(1);
+    transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+
+.header__contact-button:hover {
+    transform: scale(.95);
+    box-shadow: 0 0 1rem var(--blue);
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+}
+
+.cart__header {
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 3.9rem;
+}
+
+.nav__item {
+    position: relative;
+    padding: 2rem .5rem;
+    margin: 0 .5rem;
+    color: var(--dark-blue);
+    border-bottom: .1rem solid rgba(0, 0, 0, 0);
+}
+
+.nav__item::after {
+    position: absolute;
+    border-radius: 10rem;
+    background-color: red;
+    content: "";
+    height: .5rem;
+    width: .5rem;
+    transform: scale(0);
+    transition: transform .2s ease-in-out;
+}
+
+.nav__item:hover:after {
+    transform: scale(1);
+}
+
+.nav__item_active {
+    border-bottom: .1rem solid var(--dark-blue);
+}
+
+.block {
+    background: var(--cream) url(../images/first-block-background.png);
+    background-size: 53%;
+    background-repeat: no-repeat;
+    background-position-x: calc(100% + var(--base-badding));
+}
+
+.cart {
+    max-width: 34rem;
+    padding: 17rem 0 3rem;
+}
+
+.cart__text {
+    font-size: 24px;
+    line-height: 2.5rem;
+}
+
+.cart__button {
+    padding: 1.1rem 2rem;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    font-weight: bolder;
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.cart__button_primary {
+    color: var(--white);
+    background-color: var(--orange);
+}
