@@ -273,7 +273,7 @@ ul {
 .button-container__wrapper {
     position: relative;
     min-height: 5rem;
-    min-width: 7rem;
+    min-width: 9.5rem;
     border-radius: 1rem;
     cursor: pointer;
     transition: border-color  .2s ease;
