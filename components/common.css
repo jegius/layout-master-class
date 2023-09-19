@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --dark-blue: #22356F;
+    --blue: #62D0DF;
+    --white: #fff;
+    --cream: #F4F9E2;
+    --yellow: #F9B640;
+    --black: #181818;
+    --orange: #F55529;
+    --grey: #5A5A5A;
+    --light-grey: #EAF1FB;
+    --none: rgba(234, 241, 251, 0);
+
+    --base-badding: 10rem;
+}
