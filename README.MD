@@ -186,7 +186,7 @@ export default `
 ].map((component) => customElements.define(component.name, component));
 ```
 ВАЖНО! ButtonComponent должен быть импортирован в файл `preview.js`, проверь что
-у тебя есть строчка в импортах `import {ButtonComponent} from '../components/button/button-component';`
+у тебя есть строчка в импортах `import {ButtonComponent} from '../src/components/button/button-component';`
 
 ### Шаг 4: Запуск Storybook
 
